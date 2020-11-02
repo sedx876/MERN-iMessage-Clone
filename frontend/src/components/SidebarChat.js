@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { setChat } from "./features/chatSlice";
 import db from "./firebase";
-import "./SidebarChat.css";
+import "../styles/SidebarChat.css";
 import * as timeago from "timeago.js";
 
 import axios from './axios'

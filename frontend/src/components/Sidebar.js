@@ -1,6 +1,6 @@
 import { Avatar, IconButton } from "@material-ui/core";
 import React, { useEffect, useState } from "react";
-import "./Sidebar.css";
+import "./styles/Sidebar.css";
 import SearchIcon from "@material-ui/icons/Search";
 import RateReviewOutlinedIcon from "@material-ui/icons/RateReviewOutlined";
 import SidebarChat from "./SidebarChat";
