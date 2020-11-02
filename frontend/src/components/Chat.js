@@ -3,14 +3,14 @@ import MicNoneIcon from "@material-ui/icons/MicNone";
 import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import "../styles/Chat.css";
-import { selectChatId, selectChatName } from "./features/chatSlice";
-import db from "./firebase";
+import { selectChatId, selectChatName } from "../features/chatSlice";
+import db from "../utils/firebase";
 import Message from "./Message";
 import firebase from "firebase";
-import { selectUser } from "./features/userSlice";
+import { selectUser } from "../features/userSlice";
 import FlipMove from "react-flip-move";
 
-import axios from './axios'
+import axios from '../utils/axios'
 import Pusher from 'pusher-js'
 
 const pusher = new Pusher('411cdc565c694553c5c8', {

@@ -2,12 +2,12 @@ import { Avatar } from "@material-ui/core";
 import React, { useState } from "react";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
-import { setChat } from "./features/chatSlice";
-import db from "./firebase";
+import { setChat } from "../features/chatSlice";
+import db from "../utils/firebase";
 import "../styles/SidebarChat.css";
 import * as timeago from "timeago.js";
 
-import axios from './axios'
+import axios from '../utils/axios'
 import Pusher from 'pusher-js'
 
 const pusher = new Pusher('411cdc565c694553c5c8', {

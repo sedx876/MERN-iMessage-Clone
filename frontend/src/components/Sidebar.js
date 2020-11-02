@@ -1,14 +1,14 @@
 import { Avatar, IconButton } from "@material-ui/core";
 import React, { useEffect, useState } from "react";
-import "./styles/Sidebar.css";
+import "../styles/Sidebar.css";
 import SearchIcon from "@material-ui/icons/Search";
 import RateReviewOutlinedIcon from "@material-ui/icons/RateReviewOutlined";
 import SidebarChat from "./SidebarChat";
 import { useSelector } from "react-redux";
-import { selectUser } from "./features/userSlice";
-import db, { auth } from "./firebase";
+import { selectUser } from "../features/userSlice";
+import db, { auth } from "../utils/firebase";
 
-import axios from './axios'
+import axios from '../utils/axios'
 import Pusher from 'pusher-js'
 
 const pusher = new Pusher('411cdc565c694553c5c8', {
